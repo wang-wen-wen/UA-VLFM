@@ -303,7 +303,7 @@ class Model_Finetuing(torch.nn.Module):
 
 def main(args):
     # 1. 初始化模型
-    weight_path = "./BioBert/RetiZero.pth"
+    weight_path = "./BioBert/RETFound_oct_weights.pth"
     model = Model_Finetuing(model_name="lora", class_num=args.num_classes, weight_path=weight_path)
 
     # 2. 加载预训练权重
@@ -351,7 +351,7 @@ def get_parser():
 if __name__ == "__main__":
     torch.set_num_threads(4)
     args = get_parser().parse_args()
-    args.seed = 1234
+    args.seed = ""
     u.setup_seed(args.seed)
 
     print("训练参数配置:")

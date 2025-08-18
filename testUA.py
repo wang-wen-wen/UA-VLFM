@@ -211,7 +211,7 @@ def get_parser():
 
 if __name__ == "__main__":
     # 设置随机种子
-    u.setup_seed(1234)
+    u.setup_seed("")
     # 解析参数
     args = get_parser().parse_args()
     

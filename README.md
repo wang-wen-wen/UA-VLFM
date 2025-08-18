@@ -15,7 +15,7 @@
 
 
 &&&Create and Activate Conda Environment
-conda create -n retizero python=3.8 -y
+conda create -n UA_VLFM python=3.8 -y
 conda activate UA_VLFM
 
 &&&Install Dependencies
